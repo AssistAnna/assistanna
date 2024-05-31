@@ -2,14 +2,14 @@
     <div class="section4 flex">
         <div class="button">
             <p>Un projet Web ?</p>
-            <button class="box-shadow">Contactez-moi !</button>
+            <button @click="$router.push('/contact')" class="box-shadow">Contactez-moi !</button>
         </div>
         <h2>Les étapes : de la conception à la mise en ligne</h2>
         <div class="etapes flex">
             <div class="etape box-shadow" v-for="step in steps" :key="step.title">
-            <img :src="step.url" :alt="step.title">
-            <h4>{{ step.title }}</h4>
-            <p>{{ step.description }}</p>
+                <img :src="step.url" :alt="step.title">
+                <h4>{{ step.title }}</h4>
+                <p>{{ step.description }}</p>
             </div>
         </div>
     </div>

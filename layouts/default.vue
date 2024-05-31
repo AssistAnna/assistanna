@@ -43,6 +43,7 @@
         --blue-light: #86D7F3;
         --blue-dark: #1F2346;
         --orange: #FEB858;
+        --beige: #FCF2E3;
         text-decoration: none;
     }
     a {
@@ -53,6 +54,16 @@
     }
     .box-shadow{
         box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    }
+
+    .title-h2 {
+        font-family: 'mada-regular';
+        color: var(--blue-dark);
+        font-size: 2.8rem;
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 1.1rem;
+        text-decoration-color: var(--blue-light);
     }
  
 /*pages transition */

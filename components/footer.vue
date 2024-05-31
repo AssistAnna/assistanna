@@ -8,10 +8,11 @@
                 <nuxt-link to="/"><img src="/icons/icon-linkedin-white.png" alt="icon social linkedin"></nuxt-link>
             </div>
         </div>
-        
-        <div class="button">
+        <!--
+            <div class="button">
             <button class="box-shadow">Découvrez mon portefolio</button>
         </div>
+        -->
         <div class="button2">
             <p>Un projet Web ?</p>
             <button class="box-shadow">Contactez-moi !</button>
@@ -28,10 +29,10 @@
 <style lang="scss" scoped>
 .footer {
     background-color: var(--blue-dark);
-    width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: white;
+    padding: 0 3rem;
     .titles {
         font-family: 'magra-regular';
         margin: 1.5rem 0;
@@ -78,7 +79,7 @@
             text-align: center;
         }
         button {
-            background-color: var(--blue-medium);
+            background-color: var(--orange);
             font-size: 0.9rem;
             color: white;
             padding: 1rem 2rem;

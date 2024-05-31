@@ -10,7 +10,7 @@
                 </div>
                 <div class="button">
                     <p>Un projet Web ?</p>
-                    <button class="box-shadow">Contactez-moi !</button>
+                    <button @click="$router.push('/contact')" class="box-shadow">Contactez-moi !</button>
                 </div>
             </div>
             <div class="right">
@@ -23,10 +23,8 @@
 
 </template>
 
-<script>
-    export default {
-        
-    }
+<script setup lang="ts">
+    const router = useRouter()
 </script>
 
 <style lang="scss" scoped>

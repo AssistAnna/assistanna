@@ -5,7 +5,7 @@
         </nuxt-link>
         <div class="right-side flex">
             <nuxt-link class="nav-item" to="/projets">Portefolio</nuxt-link>
-            <nuxt-link class="nav-item" to="/">Contact</nuxt-link>
+            <nuxt-link class="nav-item" to="/contact">Contact</nuxt-link>
             <div class="socials flex">
                 <nuxt-link to="/"><img src="/icons/icon-github-bluedark.png" alt="icon social github"></nuxt-link>
                 <nuxt-link to="/"><img src="/icons/icon-linkedin-bluedark.png" alt="icon social linkedin"></nuxt-link>
