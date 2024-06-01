@@ -45,4 +45,28 @@
     }
    
 }
+/*version mobile */
+
+    @media screen and (max-width: 550px) {
+            .section2 {
+                p {
+                    font-size: 1.2rem;
+                    padding: 1rem;
+                    margin: 0;
+                }
+                .button {
+                    button {
+                        font-size: 0.8rem;
+                        padding: 1rem 2rem;
+                        font-weight: bold;
+                        margin: 0.5rem 0 2rem 0;
+                    }
+                }
+            }
+    }
+/* version tablette */
+
+    @media (min-width: 551px) and (max-width: 1124px) {
+        
+    }
 </style>

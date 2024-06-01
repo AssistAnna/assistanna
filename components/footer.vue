@@ -20,11 +20,6 @@
     </div>
 </template>
 
-<script>
-    export default {
-        
-    }
-</script>
 
 <style lang="scss" scoped>
 .footer {
@@ -93,4 +88,41 @@
         }
     }
 }
+/*version mobile */
+
+@media screen and (max-width: 550px) {
+        .footer {
+            .titles {
+                h1 {
+                    font-size: 1.2rem;
+                }
+                h2 {
+                    font-size: 0.8rem;
+                }
+                .socials {
+                    img {
+                        height: 2.2rem;
+                    }
+                }
+            }
+            .button2 {
+                p {
+                    font-size: 1rem;
+                    margin-bottom: 0.6rem;
+                }
+                button {
+                    font-size: 0.7rem;
+                    color: white;
+                    padding: 1rem 1.5rem;
+                    font-weight: bold;
+                }
+            }
+            
+        }
+    }
+/* version tablette */
+
+    @media (min-width: 551px) and (max-width: 1124px) {
+        
+    }
 </style>

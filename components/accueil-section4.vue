@@ -68,10 +68,6 @@
             border: 4px solid var(--blue-light);
             padding: 1rem 1.8rem;
             width: 20%;
-
-            img {
-
-            }
             h4 {
                 font-family: 'mada-regular';
                 color: var(--blue-medium);
@@ -94,7 +90,7 @@
             text-align: center;
         }
         button {
-            background-color: var(--orange);
+            background-color: var(--blue-light);
             font-size: 1.1rem;
             color: white;
             padding: 1rem 2.4rem;
@@ -108,4 +104,44 @@
         }
     }
 }
+/*version mobile */
+
+@media screen and (max-width: 550px) {
+        .section4 {
+            .button {
+                margin-top: 0;
+                p {
+                    font-size: 1.2rem;
+                }
+                button {
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    padding: 1rem 2rem;                    
+                }
+            }
+            h2 {
+                font-size: 1.2rem;
+                text-align: center;
+                padding: 2rem;
+            }
+            .etapes {
+                flex-direction: column;
+                align-items: center;
+                .etape {
+                    margin: 0.6rem;
+                    padding: 1rem 1.8rem;
+                    width: 80%;
+                    h4 {
+                        font-size: 1.2rem;
+                        margin: 1rem 0;
+                    }
+                }
+            }
+        }
+    }
+/* version tablette */
+
+    @media (min-width: 551px) and (max-width: 1124px) {
+        
+    }
 </style>

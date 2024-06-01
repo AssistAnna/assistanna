@@ -2,8 +2,7 @@
     <div class="all-site">
         <Navbar/>
         <NuxtPage/>
-        <Footer/>
-       
+        <Footer/>       
     </div>
   </template>
   <script>
@@ -75,4 +74,18 @@
 .page-leave-to {
   opacity: 0;
 }
+
+/* 
+media queries
+version mobile
+    @media screen and (max-width: 550px) {
+            
+    }
+
+version tablette
+    @media (min-width: 551px) and (max-width: 1124px) {
+        
+    }
+    
+*/
 </style>

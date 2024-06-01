@@ -67,4 +67,34 @@
         
         
     }
+    /*version mobile */
+
+    @media screen and (max-width: 550px) {
+          .section3 {
+            flex-direction: column;
+            height: 100%;
+            margin: 0;
+            .left {
+                padding: 1rem;
+                width: 80%;
+                margin: 1rem 1rem 3rem 1rem;
+                h4 {
+                    text-align: center;
+                    margin: 2rem 0;
+                    font-size: 1.7rem;
+                }
+                li {
+                    font-size: 0.8rem;
+                }
+            }
+            .right {
+               display: none;
+            }
+          }
+    }
+/* version tablette */
+
+    @media (min-width: 551px) and (max-width: 1124px) {
+        
+    }
 </style>

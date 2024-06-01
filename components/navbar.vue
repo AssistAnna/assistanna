@@ -1,5 +1,5 @@
 <template>
-    <div class="Navbar flex box-shadow">
+    <div class="navbar-desktop flex box-shadow">
         <nuxt-link to="/">
             <h1>Anna Flourou</h1>
         </nuxt-link>
@@ -21,7 +21,7 @@
 </script>
 
 <style lang="scss" scoped>
-    .Navbar {
+    .navbar-desktop {
         z-index: 100;
         position: fixed;
         width: 100%;
@@ -67,6 +67,17 @@
             color: var(--blue-medium);
             padding-left: 2rem;
         }
+    }
+    /*version mobile  */
+    @media screen and (max-width: 550px) {
+        .navbar-desktop {
+            display: none;
+        }
+    }
+
+    /*version tablette*/
+    @media (min-width: 551px) and (max-width: 1124px) {
+        
     }
     
 </style>

@@ -91,4 +91,53 @@
     }
     
 }
+/*version mobile  */
+@media screen and (max-width: 550px) {
+    .section1 {
+        height: 100%;
+    }
+    .img-title {
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            text-align: center;
+            font-size: 2.2rem !important;
+        }
+        .title-h3 {
+            h3 {
+                font-size: 1rem;
+            }
+            p {
+                font-size: 1rem;
+
+            }
+        }
+        .button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1.5rem 0;
+            p {
+                font-size: 1rem;
+            }
+            button {
+                font-size: 0.9rem;
+                font-weight: bold;
+                padding: 0.8rem 2rem;
+            }
+            
+        }
+        .right {
+            img {
+                height: 28vh !important;
+            }
+        }
+    }
+}
+
+/*version tablette*/
+@media (min-width: 551px) and (max-width: 1124px) {
+    
+}
+    
 </style>
