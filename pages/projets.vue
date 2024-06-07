@@ -3,18 +3,22 @@
     <div class="projets" >
         <h2 class="title-h2">Projets</h2>
         <p class="text">Voici quelques une de mes créations. Vous y trouverez des sites webs responsive suite à de précédentes collaborations ainsi que quelques modules créés en interne.</p>
-        <nuxt-link v-for="projet in projets" :key="projet.id" target="_blank" class="item box-shadow" :to="projet.linkProjet" :style="' background-color:' + projet.bkgcolor">
+        <div v-for="projet in projets" :key="projet.id" class="item box-shadow" :style="' background-color:' + projet.bkgcolor">
             <div class="bloc-left">
                 <h4>{{ projet.name }}</h4>
                 <p  class="type box-shadow" :style="' background-color:' + projet.typeBkgColor">{{ projet.type }}</p>
                 <p class="description">{{ projet.description }}</p>
                 <p class="description"><span>Objectif :</span> {{ projet.objectif }}</p>
-                <button class="box-shadow">Voir &#8594;</button>
+                <nuxt-link :to="projet.linkProjet" target="_blank">
+                    <button class="box-shadow" >Voir &#8594;</button>
+                </nuxt-link>
             </div>
             <div class="bloc-right">
-                <NuxtImg preload :src="projet.urlImg"/>
+                <nuxt-link class="link" target="_blank" :to="projet.linkProjet">
+                    <NuxtImg preload :src="projet.urlImg"/>
+                </nuxt-link>
             </div>
-        </nuxt-link>
+        </div>
         
     </div>
 </template>
@@ -35,22 +39,11 @@ const projets = [
         linkProjet: "https://www.studio-byno.fr/"
     },
     {
-        id: 3,
-        name: "Afflua",
-        type: "refonte graphique",
-        typeBkgColor: "var(--blue-light)",
-        bkgcolor: "white",
-        description: "Froid commercial et climatisation",
-        objectif: "Refonte graphique, le propriétaire du site souhaitait moderniser le design de son site web.",
-        urlImg: "/projets/afflua.png",
-        linkProjet: "https://aflua.fr/"
-    },
-    {
         id: 2,
         name: "Le crozet de Saturne",
         type: "site vitrine",
         typeBkgColor: "var(--orange)",
-        bkgcolor: "var(--beige)",
+        bkgcolor: "white",
         description: "Location de gîtes dans la région des Cévennes",
         objectif: "Sylvie et José souhaitaient améliorer leur visibilité sur le web avec la création d'un site vitrine et liens de redirection vers des applications de réservations de séjours tels que AirBnb ou tripAdvisor",
         urlImg: "/projets/crozet-saturne.png",
@@ -61,7 +54,7 @@ const projets = [
         name: "Formulaire de contact",
         type: "module",
         typeBkgColor: "var(--blue-medium)",
-        bkgcolor: "white",
+        bkgcolor: "var(--beige)",
         description: "Module de formulaire de contact responsive et sécurisé",
         objectif: "Implémenter un moyen de contact entre le visiteur et l'entreprise",
         urlImg: "/projets/formulaire-contact.jpg",
@@ -137,10 +130,57 @@ const projets = [
             padding: 2rem;
             img {
                 width: 32vw;
-                min-height: 15rem;
-                height: 100%;
+                height: 17rem;
             }
         }
     }
+}
+ /*version mobile */
+ @media screen and (max-width: 894px) {
+   .projets {
+        .text {
+            margin: 0 2rem;
+            font-size: 1.2rem;
+        }
+        .item {
+            flex-direction: column;
+            margin: 3rem 2rem;
+            .bloc-left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h4 {
+                    text-align: center;
+                }
+                .type {
+                    max-width: 28vw;
+                    font-size: 1rem;
+                    padding: 1rem 1.5rem;
+                    font-family: 'mada-semiBold';
+                    color: white;
+                    margin: 0;
+                }
+                .description {
+                    font-size: 1.2rem;
+                    margin: 1rem 0;
+                }
+                button {
+                    font-size: 1.2rem;
+                    padding: 0.8rem 1.5rem;
+                }
+            }
+            .bloc-right {
+                padding: 0 1.5rem 2rem 1.5rem;
+                img {
+                    width: 60vw;
+                    height: 12rem;
+                }
+            }
+        }
+   }
+}
+/* version tablette */
+@media (min-width: 895px) and (max-width: 1124px) {
+    
 }
 </style>

@@ -136,7 +136,6 @@ const retourAccueil = async () => {
 <style lang="scss" scoped>
 .contact {
     padding-top: 4rem;
-    height: 80vh;
     .bloc {
         margin: 1rem 3rem;
         padding: 2rem;
@@ -147,7 +146,7 @@ const retourAccueil = async () => {
         }
         .bloc-left {
             border-radius: 2px;
-            padding: 1rem 2rem;
+            padding: 1rem 0;
             width: 30%;
             
 
@@ -244,6 +243,60 @@ const retourAccueil = async () => {
                 }
 
             }
+        }
+    }
+}
+ /*version mobile */
+ @media screen and (max-width: 804px) {
+   .contact {
+    margin-bottom: 3rem;
+    .bloc {
+        flex-direction: column;
+        justify-content: center;
+        overflow-x: hidden;
+        margin: 0;
+        .bloc-left {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                text-align: center;
+            }
+        }
+        .bloc-right {
+            flex-direction: column;
+            .inputs {
+                flex-direction: column;
+                width: 100%;
+                .marge-right {
+                    margin-right: 0!important;
+                }
+            }
+        }
+    }
+   }
+}
+/* version tablette */
+@media (min-width: 805px) and (max-width: 1063px) {
+    .contact {
+        .bloc {
+            flex-direction: column;
+            .bloc-left {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .bloc-right {
+            .formulaire {
+                width: 100%;
+                .inputs {
+                    width: 100%;
+                    justify-content: normal;
+                }
+            }
+        }
         }
     }
 }

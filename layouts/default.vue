@@ -5,37 +5,13 @@
         <Footer/>       
     </div>
   </template>
-  <script>
-  
-  export default {
-    
-  
-  }
-  </script>
+<script setup>
+
+
+</script>
   
 <style>
-    /* font Magra */
-    @font-face {
-        font-family: 'magra-regular';
-        src: url('/fonts/Magra-Regular.ttf') format('opentype'),
-    }
-    /* font Mada */
-    @font-face {
-        font-family: 'mada-medium';
-        src: url('/fonts/Mada-Medium.ttf') format('opentype'),
-    }
-    @font-face {
-        font-family: 'mada-regular';
-        src: url('/fonts/Mada-Regular.ttf') format('opentype'),
-    }
-    @font-face {
-        font-family: 'mada-semiBold';
-        src: url('/fonts/Mada-SemiBold.ttf') format('opentype'),
-    }
-    @font-face {
-        font-family: 'mada-light';
-        src: url('/fonts/Mada-Light.ttf') format('opentype'),
-    }
+   
     body {
         margin: 0px;
         --blue-medium: #567BDA;
@@ -44,6 +20,7 @@
         --orange: #FEB858;
         --beige: #FCF2E3;
         text-decoration: none;
+        height: 100%;
     }
     a {
         text-decoration: none;
@@ -63,6 +40,11 @@
         text-decoration: underline;
         text-underline-offset: 1.1rem;
         text-decoration-color: var(--blue-light);
+    }
+    @media screen and (max-width: 894px) {
+        .title-h2 {
+            text-underline-offset: 0.8rem;
+        }
     }
  
 /*pages transition */

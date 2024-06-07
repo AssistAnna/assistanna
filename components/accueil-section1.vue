@@ -6,7 +6,7 @@
                 <div class="title-h3 flex">
                     <h3>Site vitrine</h3>
                     <p>&</p>
-                    <h3>site corporate</h3>
+                    <h3>refonte graphique</h3>
                 </div>
                 <div class="button">
                     <p>Un projet Web ?</p>
@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="right">
-                <img class="box-shadow" src="/fond-accueil-2.jpg" alt="">
+                <img class="box-shadow" src="/me.png" alt="">
             </div>
         </div>
        
@@ -29,7 +29,6 @@
 
 <style lang="scss" scoped>
 .section1  {
-    height: 85vh;
     margin: 2rem 0;
 
     
@@ -92,9 +91,8 @@
     
 }
 /*version mobile  */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 894px) {
     .section1 {
-        height: 100%;
     }
     .img-title {
         flex-direction: column;
@@ -136,7 +134,7 @@
 }
 
 /*version tablette*/
-@media (min-width: 551px) and (max-width: 1124px) {
+@media (min-width: 895px) and (max-width: 1250px) {
     
 }
     

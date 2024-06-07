@@ -18,6 +18,7 @@
 
 <style lang="scss" scoped>
 .section2 {
+    margin-top: 6rem;
     p {
         font-family: 'mada-regular';
         color: var(--blue-dark);
@@ -47,8 +48,9 @@
 }
 /*version mobile */
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 894px) {
             .section2 {
+                margin-top: 2rem;
                 p {
                     font-size: 1.2rem;
                     padding: 1rem;
@@ -66,7 +68,7 @@
     }
 /* version tablette */
 
-    @media (min-width: 551px) and (max-width: 1124px) {
+    @media (min-width: 895px) and (max-width: 1250px) {
         
     }
 </style>

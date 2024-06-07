@@ -106,7 +106,7 @@
 }
 /*version mobile */
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 894px) {
         .section4 {
             .button {
                 margin-top: 0;
@@ -141,7 +141,7 @@
     }
 /* version tablette */
 
-    @media (min-width: 551px) and (max-width: 1124px) {
+    @media (min-width: 895px) and (max-width: 1250px) {
         
     }
 </style>
