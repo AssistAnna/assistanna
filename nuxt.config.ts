@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  runtimeConfig: {
+    public: {
+      gtagId: process.env.GTAG_ID,
+    }
+  },
   pages: true,
   modules: ["@nuxt/image"],
   app: {

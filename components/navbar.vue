@@ -8,7 +8,9 @@
             <nuxt-link to="/" class="mobile-h1">
                 <h1>Assist<span>Anna</span></h1>
             </nuxt-link>
+            <!--
             <nuxt-link class="nav-item" to="/offre">Site vitrine</nuxt-link>
+            -->
             <nuxt-link class="nav-item" to="/projets">Portefolio</nuxt-link>
             <nuxt-link class="nav-item" to="/contact">Contact</nuxt-link>
             <div class="socials flex">
