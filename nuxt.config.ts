@@ -39,23 +39,20 @@ export default defineNuxtConfig({
           id: 'n',
           name: {
             fr: 'Cookies nécessaires'
-          }
+          },
+          src: `https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG_ID}`,
         },
       ],
       optional: [
         {
           id: 'o',
           name: 'Cookies optionnels',
+          src: `https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG_ID}`,
         },
       ],
     },
     isCookieIdVisible: true,
     isIframeBlocked: true,
     locales: ['fr'],
-    localeTexts: {
-      de: {
-        iframeBlocked: 'Bitte funktionale Cookies aktivieren:',
-      },
-    },
   },
 })
