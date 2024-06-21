@@ -2,15 +2,36 @@
     <div class="all-site">
         <Navbar/>
         <NuxtPage/>
+        <CookieControl locale="fr"/>
         <Footer/>       
     </div>
   </template>
-<script setup>
+<script setup lang="ts">
+const {
+  cookiesEnabled,
+  cookiesEnabledIds,
+  isConsentGiven,
+  isModalActive,
+  moduleOptions,
+} = useCookieControl()
 
-
+// example: react to a cookie being accepted
+watch(
+  () => cookiesEnabledIds.value,
+  (current, previous) => {
+    if (
+      !previous?.includes('google-analytics') &&
+      current?.includes('google-analytics')
+    ) {
+      // cookie with id `google-analytics` got added
+      window.location.reload() // placeholder for your custom change handler
+    }
+  },
+  { deep: true },
+)
 </script>
   
-<style>
+<style lang="scss">
    
     body {
         margin: 0px;
@@ -57,17 +78,18 @@
   opacity: 0;
 }
 
-/* 
-media queries
-version mobile
-    @media screen and (max-width: 550px) {
-            
-    }
-
-version tablette
-    @media (min-width: 551px) and (max-width: 1124px) {
-        
-    }
-    
-*/
+/* bar cookie */
+.cookieControl__BarContainer {
+  h2 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-family: 'mada-light';
+    font-size: 0.9rem;
+    margin-right: 1rem;
+  }
+  button {
+    padding: 0.8rem 1.2rem;
+  }
+}
 </style>

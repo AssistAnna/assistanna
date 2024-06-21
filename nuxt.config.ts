@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     }
   },
   pages: true,
-  modules: ["@nuxt/image"],
+  modules: ["@nuxt/image", "@dargmuesli/nuxt-cookie-control"],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
@@ -22,5 +22,40 @@ export default defineNuxtConfig({
         { name: 'image', content: 'https://assistanna.com/img-seo.png'}
       ],
     }
-  }
+  },
+  cookieControl: {
+    colors: {
+      checkboxActiveBackground: '#00A34A', // text-green-600
+      controlButtonBackground: '#FEB858',
+      controlButtonIconColor: '#fff',
+      modalButtonBackground: '#567BDA',
+      barBackground: '#1F2346',
+      modalOverlayOpacity: 0.5,
+    },
+    closeModalOnClickOutside: true,
+    cookies: {
+      necessary: [
+        {
+          id: 'n',
+          name: {
+            fr: 'Cookies nécessaires'
+          }
+        },
+      ],
+      optional: [
+        {
+          id: 'o',
+          name: 'Cookies optionnels',
+        },
+      ],
+    },
+    isCookieIdVisible: true,
+    isIframeBlocked: true,
+    locales: ['fr'],
+    localeTexts: {
+      de: {
+        iframeBlocked: 'Bitte funktionale Cookies aktivieren:',
+      },
+    },
+  },
 })
